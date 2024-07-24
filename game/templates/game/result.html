@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Result{% endblock %}
+
+{% block content %}
+
+<h2> Game Result </h2>
+<p>Your choice: {{ user_choice }}</p>
+<p>Computer's choice: {{ computer_choice }}</p>
+<p>Result: {{ result }}</p>
+<a href="{% url 'index' %}" class="button"> Play again </a>
+{% endblock %}

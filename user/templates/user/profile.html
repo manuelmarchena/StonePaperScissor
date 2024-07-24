@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Profile Page</h2>
+<p>Welcome, {{ user.username }}!</p>
+<p>Games Played: {{ games_played }}</p>
+<p>Games Won: {{ games_won }}</p>
+<p>Games Lost: {{ games_lost }}</p>
+<p> Win Percentage: {{ win_percentage }}%</p>
+{% endblock %}

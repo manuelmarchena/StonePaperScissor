@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <header>
+        <h1>Stone Paper Scissor</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Home Page</a><li>
+            {% if user.is_authenticated %}
+                <li><a href="{% url 'profile' %}">Profile</a><li>
+                    <li><a href="{% url 'logout' %}">Log out</a><li>
+                {% if user.is_superuser %}
+                <li><a href="/admin/">Admin</a></li>
+                {% endif %}
+            {% else %}
+                <li><a href="{% url 'login' %}">Log in</a><li>
+                <li><a href="{% url 'register' %}">Sign in</a><li>
+            {% endif %}
+        </ul>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>© 2024 Stone Paper Scissor</p>
+    </footer>
+</body>
+</html>
