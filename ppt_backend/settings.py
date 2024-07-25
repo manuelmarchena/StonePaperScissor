@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-i-o_w1yl1m2h+#j*j!q%vw04)_s60b^*udpe)0dp(+oj$h+5&2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://stone-paper-scissor--eosin.vercel.app/']
 
 
 # Application definition
