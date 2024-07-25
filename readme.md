@@ -15,7 +15,6 @@ Piedra Papel Tijera es un juego web basado en el clásico juego de Rock-Paper-Sc
 - Django 5.0.5
 - Python 3.12.2
 - HTML/CSS
-- Bootstrap (opcional para el diseño)
 
 ## Instalación
 
@@ -24,8 +23,8 @@ Sigue estos pasos para configurar el proyecto en tu entorno local:
 1. **Clona el repositorio**:
 
     ```bash
-    git clone https://github.com/tuusuario/tuproyecto.git
-    cd tuproyecto
+    git clone https://github.com/manuelmarchena/StonePaperScissor.git
+    cd StonePaperScissor
     ```
 
 2. **Crea un entorno virtual e instálalo**:
